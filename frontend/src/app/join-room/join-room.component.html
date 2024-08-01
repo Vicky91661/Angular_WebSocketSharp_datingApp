@@ -1,0 +1,25 @@
+<div class="join-container">
+    <div class="join-box">
+        <div class="join-content">
+            <h2>Welcome to Chat Hub</h2>
+            <div>Please join the Room to start Chatting</div>
+            <div>
+                <form [formGroup]="joinRoomForm">
+                    <div class="image-container">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/24/23/30/chat-8147986_1280.jpg" alt="Chat Image">
+                    </div>
+                    <div class="input-container">
+                        <input formControlName="user" type="text" placeholder="Display Name" id="displayname" class="form-control">
+                    </div>
+                    <div class="input-container">
+                        <input formControlName="room" type="text" placeholder="Room Name" id="roomname" class="form-control">
+                    </div>
+                    <div class="button-container">
+                        <button [disabled]="joinRoomForm.invalid" (click)="joinRoom()" type="submit">Join</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

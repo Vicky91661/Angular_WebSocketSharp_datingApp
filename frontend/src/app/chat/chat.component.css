@@ -1,0 +1,169 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chat-header h3 {
+    margin: 0;
+}
+
+/* .chat-header button {
+    background-color: #9b59b6;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+.chat-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.users-section {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px;
+    padding-top:7px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.leave-button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.connected-users {
+    overflow-y: auto;
+    max-height: 90%;
+}
+
+.connected-users h4 {
+    margin-bottom: 10px;
+}
+
+.user {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mesgs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.msg-history {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.incoming_msg {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.incoming_msg_img img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.received_msg {
+    max-width: 90%;
+}
+
+.received_withd_msg {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sent_msg {
+    max-width: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    position: relative;
+}
+
+.time_date {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: -32px;
+    right: 10px;
+}
+
+.type-msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_msg_write {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.write_msg {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input_msg_write button {
+    background-color: #9b59b6;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
